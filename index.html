@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Gastos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+<body>
+    <h1> Mi App para Gastos</h1>
+<div class="row"> 
+    <div>
+      <table class="col l5 offset-l1 s12" id="transactionTable">
+        <tr>
+            <th>
+                Tipo
+            </th>
+            <th>
+                Descripción
+            </th>
+            <th>
+                Monto
+            </th>
+            <th>
+                Categoria
+            </th>
+            <th>
+                Eliminar
+            </th>
+        </tr>
+
+        
+      </table>
+   </div>
+ <div class="col l5 s12">
+      <div class="col s8 offset-s2 " >
+             <form id="transactionForm">
+      <div class="claseFormulario">
+           
+            <p>
+                <span>Transaccion </span>
+                    <label for="Ing">
+                        <i class="material-icons">add</i>
+                        <input required id="Ing" class="with-gap" name="tsSelector" type="radio" value="Ingreso"/>
+                        <span>Ingreso</span>
+                        </label>
+                        <label for="Egr">
+                        <i class="material-icons">indeterminate_check_box</i>   
+                        <input required id="Egr" class="with-gap" name="tsSelector" type="radio" value="Egreso" />
+                        <span>Egreso</span>
+                        </label>
+            </p>
+
+      </div>
+
+       <div class="input-field col s6">
+        <input required id="TransactionDescription" type="text" class="validate" name="TransactionDescription">
+        <label for="TransactionDescription">Descripción</label>
+       </div>
+     
+      <div class="input-field col s6">
+        <input required id="TransactionAmount" type="number" class="validate" name="TransactionAmount">
+        <label for="TransactionAmount">Monto</label>
+      </div>
+
+
+
+      <div class="claseFormulario">
+        <label for="TransactionCategory">Categoria</label>
+        <select class="browser-default" id="TransactionCategory" name="TransactionCategory">
+                <option value="Compra">Compra</option>
+                <option value="Venta">Venta</option>
+                <option value="Comida">Comida</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Sueldo">Sueldo</option>
+        </select>
+        
+      </div>
+      <div class="claseFormulario">
+        <button class="waves-effect waves-light btn" type="submit" id="botonenvio" name="botonenvio">Añadir
+          <i class="material-icons right">autorenew</i>  
+        </button>
+        
+      </div> 
+      </form>  
+      </div>
+
+    </div>
+
+ 
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="resources/js/scripts.js"></script>
+</body>
+</html>

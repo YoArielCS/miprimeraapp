@@ -1,0 +1,26 @@
+th, td{
+       
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    padding: 10px;
+
+
+}
+.claseTabla{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+.claseFormulario {
+  background-color: antiquewhite;
+  padding-bottom: 20px;
+}
+#botonenvio {
+  background-color: aqua;
+}
